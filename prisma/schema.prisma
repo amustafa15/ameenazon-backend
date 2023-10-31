@@ -20,18 +20,12 @@ model User {
   phoneNumber String?  
   password String?
 
-  // Cart Cart?
 }
 
 model Cart {
   id     Int     @id @default(autoincrement())
-  // cartNumber    Int @unique
-  // userId Int     @unique
-  // productId Int     @unique
   contents Int[]
   cost Int
-  // User User @relation(fields: [userId], references: [id])
-  // Product Product @relation(fields: [productId], references: [id])
 }
 
 model Product {
@@ -44,6 +38,4 @@ model Product {
   imgCarousel String[]
   desc String
   tag String
-  // productId Int?
-  // Cart Cart? @relation(fields: [productId], references: [id])
 }

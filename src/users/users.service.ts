@@ -13,8 +13,6 @@ export class UsersService {
   }
 
   findAll() {
-    // return `This action returns all users`;
-    console.log("all users = ", this.prisma.user.findMany())
     return this.prisma.user.findMany();
   }
 

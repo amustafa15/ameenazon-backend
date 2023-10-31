@@ -1,7 +1,6 @@
 // prisma/seed.ts
 
 import { PrismaClient } from '@prisma/client';
-// import { Cart } from 'src/carts/entities/cart.entity';
 
 // initialize Prisma Client
 const prisma = new PrismaClient();
@@ -218,25 +217,6 @@ async function main() {
         tag: "this is a top tier bridge"
     },
   });
-
-  // const cart1 = await prisma.cart.upsert({
-  //   where: {id: 1},
-  //   update: {},
-  //   create: {
-  //     cost: 100,
-  //     contents: [
-  //       product7.id
-  //     ]
-  //   },
-  // });
-
-//   const cart2 = await prisma.cart.upsert({
-//     where: {},
-//     update: {},
-//     create: {
-
-//     },
-//   });
 
   console.log({ user1, user2, product1, product2, product3, product4, product5, product6, product7 });
 }

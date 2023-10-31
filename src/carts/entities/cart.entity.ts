@@ -1,5 +1,4 @@
 import { ApiProperty } from '@nestjs/swagger';
-// import { Product } from 'src/products/entities/product.entity';
 import { Cart } from '@prisma/client';
 
 export class CartEntity implements Cart {
@@ -15,15 +14,4 @@ export class CartEntity implements Cart {
     @ApiProperty()
     contents: number[]
 
-    // @ApiProperty()
-    // cartNumber: number;
-
-    // @ApiProperty()
-    // userId: number;
-
-    // @ApiProperty()
-    // productId: number;
-
-    // @ApiProperty()
-    // Product: [Product]
 }

@@ -1,6 +1,5 @@
 import { ApiProperty } from '@nestjs/swagger';
 import { Product } from '@prisma/client';
-// import { CartEntity } from 'src/carts/entities/cart.entity';
 
 export class ProductEntity implements Product {
     constructor(partial: Partial<ProductEntity>) {
@@ -33,19 +32,5 @@ export class ProductEntity implements Product {
 
     @ApiProperty()
     tag: string
-
-    // @ApiProperty({required: false, nullable: true})
-    // productId: number
-
-    // @ApiProperty({required: false, type: CartEntity})
-    // Cart?: CartEntity
-
-    // constructor({Cart, ...data}: Partial<ProductEntity>) {
-    //     Object.assign(this, data)
-
-    //     if (Cart) {
-    //         this.Cart = new CartEntity(Cart)
-    //     }
-    // }
 
 }
